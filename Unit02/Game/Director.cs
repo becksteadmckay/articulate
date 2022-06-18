@@ -21,7 +21,7 @@ namespace Unit02.Game
         /// </summary>
         public Director()
         {
-            for (int i = 0; i < 5; i++)
+            for (int a = 0; a < 5; a++)
             {
                 Die die = new Die();
                 dice.Add(die);
@@ -33,6 +33,7 @@ namespace Unit02.Game
         /// </summary>
         public void StartGame()
         {
+
             while (isPlaying)
             {
                 GetInputs();
@@ -62,10 +63,10 @@ namespace Unit02.Game
             }
 
             score = 0;
-            foreach (Die die in dice)
+            foreach (Die a in dice)
             {
-                die.Roll();
-                score += die.points;
+                a.Roll();
+                score += a.points;
             }
             totalScore += score;
         }
@@ -81,9 +82,9 @@ namespace Unit02.Game
             }
 
             string values = "";
-            foreach (Die die in dice)
+            foreach (Die a in dice)
             {
-                values += $"{die.value} ";
+                values += $"{a.value} ";
             }
 
             Console.WriteLine($"You rolled: {values}");
@@ -91,6 +92,7 @@ namespace Unit02.Game
             isPlaying = (score > 0);
         }
     }
+
 }
 
 

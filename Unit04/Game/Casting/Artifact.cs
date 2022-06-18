@@ -1,5 +1,23 @@
 namespace Unit04.Game.Casting
 {
+    class Artifact: Actor
+    {
+        public string _message;
+
+        public Artifact()
+        {
+
+        }
+        public string GetMessage()
+        {
+            return _message;
+        }
+        public void SetMessage(string message)
+        {
+            _message = message;
+        }
+
+    }
     // TODO: Implement the Artifact class here
 
     // 1) Add the class declaration. Use the following class comment. Make sure you

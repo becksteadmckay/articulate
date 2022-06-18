@@ -4,7 +4,22 @@ using System;
 namespace Unit03.Game
 {
     // TODO: Implement the Seeker class as follows...
+    public class Seeker
+    {
+        private int location;
+        public Seeker(){}
 
+        public int GetLocation()
+        {
+            return location;
+        }
+        public int MoveLocation(int newLocation)
+        {
+            location = newLocation;
+            return location;
+        }
+
+    }
     // 1) Add the class declaration. Use the following class comment.
 
         /// <summary>
